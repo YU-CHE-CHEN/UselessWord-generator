@@ -1,0 +1,29 @@
+.titleText {
+  font-size: 40px;
+}
+
+img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.outputText {
+  min-width: 60%;
+  min-height: 80px;
+  line-height: 40px;
+  margin-left: 1rem;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.outputArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  height: 40px;
+}

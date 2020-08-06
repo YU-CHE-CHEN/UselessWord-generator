@@ -1,0 +1,42 @@
+<div class='container'>
+  <div class="row">
+    <div class='row justify-content-center align-items-center w-100 mt-5'>
+      <p class='text-white titleText'>你想對誰說幹話？</p>
+    </div>
+    <form action="/" method="post">
+      <div class='card-group'>
+        <label for="developer" class="card m-3 rStyle">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body row align-items-center justify-content-center mx-0">
+            <input type="radio" name="job" id="developer" value="engineer" {{#test radioChecked "engineer"}}{{/test}}>
+            <h5 class="card-title mb-1">工程師</h5>
+          </div>
+        </label>
+
+        <label for="designer" class="card m-3 gStyle">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body row align-items-center justify-content-center mx-0">
+            <input type="radio" name="job" id="designer" value="designer" {{#test radioChecked "designer"}}{{/test}}>
+            <h5 class="card-title mb-1">設計師</h5>
+          </div>
+        </label>
+
+        <label for="founder" class="card m-3 bStyle">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body row align-items-center justify-content-center mx-0">
+            <input type="radio" name="job" id="founder" value="entrepreneur"
+              {{#test radioChecked "entrepreneur"}}{{/test}}>
+            <h5 class="card-title mb-1">創業家</h5>
+          </div>
+        </label>
+      </div>
+      <div class='output'>
+        <button type="submit" class="btn btn-secondary btn-lg">產生幹話</button>
+        <div class="outputText">{{uselessWord}}</div>
+      </div>
+    </form>
+  </div>
+</div>
